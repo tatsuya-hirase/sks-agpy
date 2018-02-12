@@ -53,7 +53,6 @@ exports.handler = (event, context, callback)=> {
               // TODO 所有者/借りている人はDB上でどう持つ
               // user.id持つならagpy-usersを見に行かないといけない
               // borrowerなどundefinedなことがあり得る属性をそのまま取ろうとすると無い時に失敗する
-              // set Allow origin...in the header of response! Do not try to do it on management console
               var item = {
                 id: data.Item.id.S,
                 category: data.Item.category.S,
